@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "doggy"
+version = "0.1.0"
+description = ""
+authors = ["Jakub Karbowski <carbon225@proton.me>"]
+readme = "README.md"
+packages = [
+    { include = "doggy" }
+]
+
+[tool.poetry.scripts]
+doggy_spin = 'doggy.examples:spin'
+
+[tool.poetry.dependencies]
+python = "^3.8"
+paho-mqtt = "^1.6.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
